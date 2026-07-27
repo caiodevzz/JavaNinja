@@ -2,14 +2,11 @@ package desafio.matrizes;
 
 import java.util.Scanner;
 
-public class exercio04 {
+public class exercio05 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Digite um numero: ");
         int n = sc.nextInt();
-
-        System.out.print("Digite outro numero: ");
         int m = sc.nextInt();
 
         int[][] matriz = new int[n][m];
@@ -20,17 +17,17 @@ public class exercio04 {
             }
         }
 
-        int maiorValor = 0;
+        int contador = 0;
 
         for (int i = 0; i < n ; i++) {
             for (int j = 0; j < m ; j++) {
-              if (matriz[i][j] > maiorValor) {
-                  maiorValor = matriz[i][j];
-              }
+                if (matriz[i][j] % 2 == 0) {
+                    contador++;
+                }
             }
         }
 
-        System.out.println("O valor  valor e: " + maiorValor);
+        System.out.println("Total de numeros pares: " + contador);
 
         sc.close();
     }

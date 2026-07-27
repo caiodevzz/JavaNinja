@@ -46,7 +46,7 @@ public class CadastroDeNinjas {
                     System.out.println(x);
                 }
               }
-                break;
+            break;
 
             case 3:
                 System.out.println("Voce saiu do sistema :<");
